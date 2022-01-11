@@ -77,7 +77,7 @@ const constants = {
 
 const _envMaps = (function () {
 
-    const path = '/static/textures/cube/SwedishRoyalCastle/';
+    const path = 'static/textures/cube/SwedishRoyalCastle/';
     const format = '.jpg';
     const urls = [
         path + 'px' + format, path + 'nx' + format,
@@ -104,7 +104,7 @@ let envMaps = _envMaps;
 
 let diffuseMaps = (function () {
 
-    const bricks = textureLoader.load('/static/textures/brick_diffuse.jpg');
+    const bricks = textureLoader.load('static/textures/brick_diffuse.jpg');
     bricks.wrapS = THREE.RepeatWrapping;
     bricks.wrapT = THREE.RepeatWrapping;
     bricks.repeat.set(9, 1);
@@ -118,7 +118,7 @@ let diffuseMaps = (function () {
 
 const roughnessMaps = (function () {
 
-    const bricks = textureLoader.load('/static/textures/brick_roughness.jpg');
+    const bricks = textureLoader.load('static/textures/brick_roughness.jpg');
     bricks.wrapT = THREE.RepeatWrapping;
     bricks.wrapS = THREE.RepeatWrapping;
     bricks.repeat.set(9, 1);
@@ -134,14 +134,14 @@ const matcaps = (function () {
 
     return {
         none: null,
-        porcelainWhite: textureLoader.load('/static/textures/matcaps/matcap-porcelain-white.jpg')
+        porcelainWhite: textureLoader.load('static/textures/matcaps/matcap-porcelain-white.jpg')
     };
 
 })();
 
 const alphaMaps = (function () {
 
-    const fibers = textureLoader.load('/static/textures/alphaMap.jpg');
+    const fibers = textureLoader.load('static/textures/alphaMap.jpg');
     fibers.wrapT = THREE.RepeatWrapping;
     fibers.wrapS = THREE.RepeatWrapping;
     fibers.repeat.set(9, 1);
@@ -155,11 +155,11 @@ const alphaMaps = (function () {
 
 const gradientMaps = (function () {
 
-    const threeTone = textureLoader.load('/static/textures/gradientMaps/threeTone.jpg');
+    const threeTone = textureLoader.load('static/textures/gradientMaps/threeTone.jpg');
     threeTone.minFilter = THREE.NearestFilter;
     threeTone.magFilter = THREE.NearestFilter;
 
-    const fiveTone = textureLoader.load('/static/textures/gradientMaps/fiveTone.jpg');
+    const fiveTone = textureLoader.load('static/textures/gradientMaps/fiveTone.jpg');
     fiveTone.minFilter = THREE.NearestFilter;
     fiveTone.magFilter = THREE.NearestFilter;
 

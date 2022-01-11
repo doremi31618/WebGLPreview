@@ -56,7 +56,7 @@ class SceneInit {
 		// this.pmremGenerator = new THREE.PMREMGenerator( this.renderer );
 		// pmremGenerator.compileEquirectangularShader();
 
-		this.pano = new THREE.TextureLoader().load( '/static/textures/2294472375_24a3b8ef46_o.jpg' );
+		this.pano = new THREE.TextureLoader().load( 'static/textures/2294472375_24a3b8ef46_o.jpg' );
 		this.pano.mapping = THREE.EquirectangularReflectionMapping;
 		this.pano.encoding = THREE.sRGBEncoding;
 		

@@ -149,7 +149,7 @@ class LoadInit {
 			const loader = new THREE.GLTFLoader();
 			let dracoloader = new THREE.DRACOLoader();
             dracoloader
-                .setDecoderPath("/static/libs/draco/")
+                .setDecoderPath("static/libs/draco/")
                 .preload();
 			loader.setDRACOLoader(dracoloader);
 			loader.load(path, function(gltf) {

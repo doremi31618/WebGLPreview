@@ -23,7 +23,7 @@ async function init() {
 
 	Scene.createControls();
 
-	await Load.loadSample('/static/assets/models/gltf/street_car.glb');
+	await Load.loadSample('static/assets/models/gltf/street_car.glb');
 	addGUI(currentModel);
 }
 

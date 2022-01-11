@@ -1,10 +1,10 @@
 const sampleModels = {
 	"samples": {
-		"Street Car": "/static/assets/models/gltf/street_car.glb",
-		"F1 Car": "/static/assets/models/gltf/f1_car.glb",
-		"Off-Road Truck": "/static/assets/models/gltf/offroad_truck.glb",
-		"Motorbike": "/static/assets/models/gltf/motorbike.glb",
-		"Empire State Building": "/static/assets/models/gltf/empire_state_building.glb"
+		"Street Car": "static/assets/models/gltf/street_car.glb",
+		"F1 Car": "static/assets/models/gltf/f1_car.glb",
+		"Off-Road Truck": "static/assets/models/gltf/offroad_truck.glb",
+		"Motorbike": "static/assets/models/gltf/motorbike.glb",
+		"Empire State Building": "static/assets/models/gltf/empire_state_building.glb"
 	}
 };
 
