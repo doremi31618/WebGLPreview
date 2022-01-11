@@ -1,0 +1,104 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.box {
+  font-size: 20px;
+  position: relative;
+  width: 130px;
+}
+
+.box .title {
+  position: relative;
+  top: -30px;
+  left: -10px;
+  color: white;
+}
+
+.box .dot {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate(-50%, -50%) scale(0.8) perspective(1px);
+          transform: translate(-50%, -50%) scale(0.8) perspective(1px);
+  pointer-events: none;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.box .dot-hover {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate(-50%, -50%) scale(0.8) perspective(1px);
+          transform: translate(-50%, -50%) scale(0.8) perspective(1px);
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.box .click {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-90%, -90%);
+          transform: translate(-90%, -90%);
+  width: 100%;
+  height: 40px;
+}
+
+.box .click:hover ~ .dot {
+  opacity: 0;
+}
+
+.box .click:not(:hover) ~ .dot {
+  opacity: 1;
+}
+
+.box .click:hover ~ .dot-hover {
+  opacity: 1;
+}
+
+.box .click:not(:hover) ~ .dot-hover {
+  opacity: 0;
+}
+
+.box .clickEnter {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -140%);
+          transform: translate(-50%, -140%);
+  width: 100%;
+  height: 20px;
+}
+
+.box .clickEnter:hover ~ .dot {
+  opacity: 0;
+}
+
+.box .clickEnter:not(:hover) ~ .dot {
+  opacity: 1;
+}
+
+.box .clickEnter:hover ~ .dot-hover {
+  opacity: 1;
+}
+
+.box .clickEnter:not(:hover) ~ .dot-hover {
+  opacity: 0;
+}
+/*# sourceMappingURL=3Dmode.css.map */

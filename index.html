@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3D Models Load</title>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				position: absolute; top : 0px; left : 0px; margin: 0; padding : 0; border: 0; overflow: hidden; width: 100%; height: 100%; background-color: black;
+		
+			}
+
+			#material-list {
+				position: absolute;
+				top: 0px;
+				left: 20px;
+				z-index: 10;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="material-list"></div>
+		<script src = "https://threejs.org/build/three.js"></script>
+		<script src = "/static/libs/OrbitControls.js"></script>
+		<script src = "/static/libs/inflate.min.js"></script>
+		<script src = "/static/libs/dat.gui.min.js"></script>
+		<script src = "/static/libs/RoomEnvironment.js"></script>
+
+		<script src = "/static/loaders/FBXLoader.js"></script>
+		<script src = "https://threejs.org/examples/js/loaders/GLTFLoader.js"></script>
+		<script src = "/static/loaders/OBJLoader.js"></script>
+		<script src = "/static/loaders/STLLoader.js"></script>
+		<script src = "/static/loaders/ColladaLoader.js"></script>
+		<script src = "/static/loaders/DRACOLoader.js"></script>
+		<script src = "https://threejs.org/examples/js/exporters/GLTFExporter.js"></script>
+
+		<script src = "/static/scripts/material.js"></script>
+		<script src = "/static/scripts/mat_gui.js"></script>
+		<script src = "/static/scripts/scene.js"></script>
+		<script src = "/static/scripts/showroom.js"></script>
+		<script src = "/static/scripts/load.js"></script>
+		<script src = "/static/scripts/utils.js"></script>
+		<script src = "/static/scripts/gui.js"></script>
+		<script src = "/static/scripts/main.js"></script>
+	</body>
+</html>
